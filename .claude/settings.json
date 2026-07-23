@@ -1,0 +1,18 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "bash",
+            "if": "Bash(git commit *)",
+            "command": "FILE=\".claude/CLAUDE.md\"; HASH=$(git log -1 --format=%h); if ! grep -qF \"$HASH\" \"$FILE\" 2>/dev/null; then DATE=$(git log -1 --format=%ad --date=short); SUBJECT=$(git log -1 --format=%s); grep -q \"^## Recent Commits\" \"$FILE\" || printf \"\\n## Recent Commits\\n\\n\" >> \"$FILE\"; printf -- \"- \\`%s\\` %s %s\\n\" \"$HASH\" \"$DATE\" \"$SUBJECT\" >> \"$FILE\"; git add \"$FILE\"; git commit -m \"docs: log commit $HASH in CLAUDE.md\" --quiet; git push --quiet; fi",
+            "statusMessage": "Logging commit to CLAUDE.md and pushing to GitHub..."
+          }
+        ]
+      }
+    ]
+  }
+}
