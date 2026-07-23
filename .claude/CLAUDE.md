@@ -88,3 +88,7 @@ start/game-over/level-up overlays are plain HTML elements toggled via a `.hidden
   decision. There's no stub file for it yet; if added later, keep the same non-module,
   self-contained (Web Audio API, no external files) pattern as everything else.
 - No build tooling, TypeScript, or external image/font assets.
+
+## Recent Commits
+
+- `ad27628` 2026-07-23 Initial commit: Soldier vs Pirates browser arcade shooter
