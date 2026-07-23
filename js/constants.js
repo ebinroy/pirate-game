@@ -43,8 +43,8 @@ var LEVEL_UP_DURATION = 1.5;
 // Score to advance = the score you need to reach to move OUT of that level.
 // Level 4 has no further threshold (Infinity = final level).
 var DIFFICULTY_LEVELS = [
-  { level: 1, scoreToAdvance: 500, pirateFallSpeed: 70, spawnInterval: 1.40, spawnIntervalJitter: 0.30, pirateScoreValue: 100 },
-  { level: 2, scoreToAdvance: 1200, pirateFallSpeed: 100, spawnInterval: 1.10, spawnIntervalJitter: 0.30, pirateScoreValue: 120 },
-  { level: 3, scoreToAdvance: 2200, pirateFallSpeed: 135, spawnInterval: 0.85, spawnIntervalJitter: 0.25, pirateScoreValue: 150 },
+  { level: 1, scoreToAdvance: 1000, pirateFallSpeed: 70, spawnInterval: 1.40, spawnIntervalJitter: 0.30, pirateScoreValue: 100 },
+  { level: 2, scoreToAdvance: 3000, pirateFallSpeed: 100, spawnInterval: 1.10, spawnIntervalJitter: 0.30, pirateScoreValue: 120 },
+  { level: 3, scoreToAdvance: 6000, pirateFallSpeed: 135, spawnInterval: 0.85, spawnIntervalJitter: 0.25, pirateScoreValue: 150 },
   { level: 4, scoreToAdvance: Infinity, pirateFallSpeed: 175, spawnInterval: 0.65, spawnIntervalJitter: 0.20, pirateScoreValue: 200 }
 ];
