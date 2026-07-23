@@ -93,3 +93,4 @@ start/game-over/level-up overlays are plain HTML elements toggled via a `.hidden
 
 - `ad27628` 2026-07-23 Initial commit: Soldier vs Pirates browser arcade shooter
 - `28b1950` 2026-07-23 Add hook to auto-log commits into CLAUDE.md and push to GitHub
+- `caa860e` 2026-07-23 Increase level-up score thresholds
